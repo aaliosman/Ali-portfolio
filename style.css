@@ -1,0 +1,1020 @@
+/* header */
+
+header {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./images/headerlast-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    position: relative;
+    bottom: 50px;
+    width: 300px;
+    height: 250px;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    display: none;
+    opacity: 0.3;
+    /* border: 1px solid red; */
+}
+
+header .fa-bars {
+    position: relative;
+    right: 20px;
+    top: 40px;
+    float: right;
+    color: #dee1e4;
+}
+
+header label {
+    position: relative;
+    top: 15px;
+    font-size: 40px;
+}
+
+header label i {
+    cursor: pointer;
+}
+
+header [type=checkbox] {
+    display: none;
+}
+
+header [type=checkbox]:checked+nav {
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    right: 20px;
+    font-family: montserrat-extrabold, sans-serif;
+}
+
+header nav a:hover {
+    font-size: 22px;
+}
+
+header .header-text {
+    width: 100%;
+    height: 200px;
+}
+
+header .header-text p {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: montserrat-extrabold, sans-serif;
+}
+
+header .header-text .name {
+    color: #DD403D;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.sticky {
+    width: 150px;
+    padding: 10px;
+    top: 500px;
+    left: 20px;
+    position: sticky;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    background-color: tomato;
+    border-top-left-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    -moz-border-top-left-radius: 40px;
+    border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    border-bottom-right-radius: 39px;
+    -webkit-border-bottom-right-radius: 39px;
+    -moz-border-bottom-right-radius: 39px;
+}
+
+.sticky a {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sticky:hover {
+    background-color: #DD403D;
+}
+
+
+/* main-section */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* about me section */
+
+main .aboutme-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+main .aboutme-section .personal-img {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .aboutme-section .personal-img img {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+main .aboutme-section .personal-img .aboutme {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main .aboutme-section .personal-img .iam::after,
+main .aboutme-section .personal-img .iam::before {
+    content: "";
+    padding: 2PX;
+    width: 40PX;
+    border-radius: 10PX;
+    display: inline-block;
+    background-color: #DD403D;
+}
+
+main .aboutme-section .abouttext {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: montserrat-regular, sans-serif;
+    /* background-color: #F6F6F6; */
+}
+
+main .aboutme-section .abouttext h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main .aboutme-section .abouttext .WebDeveloper {
+    color: salmon;
+}
+
+main .aboutme-section .abouttext p {
+    width: 100%;
+    font-size: 100%;
+    line-height: 30px;
+}
+
+main .aboutme-section .abouttext .dw-cv {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+main .aboutme-section .abouttext .dw-cv button {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: none;
+    color: seashell;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #DD403D;
+}
+
+main .aboutme-section .abouttext .dw-cv button:hover {
+    background-color: white;
+    color: rgb(204, 53, 36);
+    font-weight: bolder;
+    border: 1px solid salmon;
+}
+
+
+/* my-service section */
+
+main .my-service {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #111111;
+}
+
+main .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards .card a button {
+    display: none;
+}
+
+main .my-service h2 {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .my-service .provides {
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .my-service .provides::after,
+main .my-service .provides::before {
+    content: "";
+    padding: 2PX;
+    width: 40PX;
+    border-radius: 10PX;
+    display: inline-block;
+    background-color: #DD403D;
+}
+
+main .my-service .card {
+    width: 90%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #333131;
+    box-shadow: 0px -2px 5px 0px rgba(231, 228, 228, 0.74);
+}
+
+main .my-service .card p {
+    font-size: 18px;
+    margin: 6px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .my-service .card i {
+    font-size: 40px;
+    color: #DD403D;
+}
+
+
+/* skills section */
+
+main .skills {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+main .skills h2 {
+    color: #722927;
+    font-size: 30px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .skills .know::after,
+main .skills .know::before {
+    content: "";
+    padding: 2PX;
+    width: 40PX;
+    border-radius: 10PX;
+    display: inline-block;
+    background-color: #DD403D;
+}
+
+main .skills .skill-text {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+main .skills .skill-text h2,
+main .skills .skill-text p {
+    margin: 8px;
+}
+
+.skills-icons {
+    display: none;
+}
+
+main .skills .skill-text p {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .skills .skill-text button {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: none;
+    color: seashell;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #DD403D;
+}
+
+main .skills .skill-text button:hover {
+    background-color: seashell;
+    color: salmon;
+    border: 1px solid salmon;
+}
+
+main .skills .skills-area {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+main .skills .skills-area .skill {
+    width: 90%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+main .skills .skills-area .skill .skill-title {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .skills .skills-area .skill .skill-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    height: 5px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+}
+
+main .skills .skills-area .skill .skill-fill {
+    background: #b4433b;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+main .skills .skills-area .skill .skill-fill .skill-percent {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+main .skills .skills-area .skill .html {
+    animation: html 1s;
+    width: 95%;
+}
+
+main .skills .skills-area .skill .css {
+    animation: css 2s;
+    width: 80%;
+}
+
+main .skills .skills-area .skill .js {
+    animation: js 2s;
+    width: 70%;
+}
+
+main .skills .skills-area .skill .Sass {
+    animation: Sass 3s;
+    width: 50%;
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+    to {
+        width: 95%;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes Sass {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+
+/* contact section */
+
+main .contact {
+    width: 100%;
+    height: 950px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+main .contact h2 {
+    font-size: 30px;
+    color: orange;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .contact .gettouch {
+    font-size: 20px;
+}
+
+main .contact .gettouch::after,
+main .contact .gettouch::before {
+    content: "";
+    padding: 2PX;
+    width: 40PX;
+    border-radius: 10PX;
+    display: inline-block;
+    background-color: #DD403D;
+}
+
+main .contact .contact-icons {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+main .contact .contact-icons table {
+    width: 50%;
+    height: 200px;
+    margin-left: 10px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .contact .contact-icons table i {
+    font-size: 40px;
+    margin: 10px;
+    color: #cf4d4d;
+}
+
+main .contact .contact-icons table td {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(83, 83, 83);
+}
+
+main .contact .contact-icons table span {
+    font-weight: bold;
+    color: orange;
+}
+
+main .contact form {
+    width: 90%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: montserrat-regular, sans-serif;
+}
+
+main .contact form label {
+    width: 100%;
+    font-size: 20px;
+}
+
+main .contact form input {
+    width: 80%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    background: transparent;
+    border-bottom: 2px solid #cf4d4d;
+}
+
+main .contact form textarea {
+    width: 85%;
+    height: 150px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    background: transparent;
+    border-bottom: 2px solid #946f6f;
+}
+
+main .contact form button {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    color: seashell;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #DD403D;
+}
+
+main .contact form button:hover {
+    background-color: seashell;
+    color: red;
+    border: 1px solid salmon;
+}
+
+
+/* footer */
+
+main footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+main footer span {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+main footer span a {
+    text-decoration: none;
+    color: red;
+}
+
+main footer .footer-icons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main footer .footer-icons i {
+    font-size: 40px;
+    margin: 4px;
+    color: rgb(228, 215, 215);
+}
+
+
+/* media */
+
+
+/* Tablet version */
+
+@media (min-width: 425px) and (max-width: 768px) {
+    /* about me section */
+    main .aboutme-section .personal-img img {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    main .aboutme-section .personal-img img {
+        border-top-left-radius: 32px;
+        -webkit-border-top-left-radius: 32px;
+        -moz-border-top-left-radius: 32px;
+        border-top-right-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -moz-border-top-right-radius: 0;
+        border-bottom-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        -moz-border-bottom-right-radius: 30px;
+    }
+    .cards .card a button {
+        width: 100px;
+        padding: 10px;
+        display: block;
+        border: none;
+        color: whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #DD403D;
+    }
+    .cards .card a {
+        text-decoration: none;
+    }
+    main .skills .skill-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .skills-icons {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-icons i {
+        font-size: 70px;
+        padding: 20px;
+        color: orange;
+    }
+    .skills-icons i:hover {
+        font-size: 100px;
+    }
+}
+
+
+/* desktop version */
+
+
+/*   header */
+
+@media (min-width:769px) {
+    header .fa-bars {
+        display: none;
+    }
+    header nav {
+        width: 80%;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        opacity: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+    header .logo-nav .logo {
+        width: 30%;
+        height: 300px;
+        margin-left: 50px;
+    }
+    header .logo-nav .logo img {
+        width: 80%;
+        height: 300px;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 6px;
+        padding: 0;
+    }
+    header nav ul li a {
+        font-weight: normal;
+        font-size: 20px;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    header nav ul li a:hover {
+        font-size: 20px;
+    }
+    header nav ul li::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        margin: 15px;
+        position: relative;
+        background: #f44336;
+        display: block;
+        transition: 0.5s;
+    }
+    nav ul li:hover::after {
+        width: auto;
+        margin-left: -20px;
+    }
+    header .header-text p .name {
+        font-weight: bold;
+        font-size: 70px;
+    }
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* about me section */
+    main .aboutme-section {
+        display: flex;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    main .aboutme-section .personal-img img {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    main .aboutme-section .personal-img img {
+        border-top-left-radius: 32px;
+        -webkit-border-top-left-radius: 32px;
+        -moz-border-top-left-radius: 32px;
+        border-top-right-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -moz-border-top-right-radius: 0;
+        border-bottom-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        -moz-border-bottom-right-radius: 30px;
+    }
+    /* my service section */
+    main .my-service .cards {
+        width: 90%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        background-color: #111111;
+    }
+    .cards .card a button {
+        width: 100px;
+        padding: 10px;
+        display: block;
+        border: none;
+        color: whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #DD403D;
+    }
+    .cards .card a {
+        text-decoration: none;
+    }
+    main .my-service .cards .card {
+        width: 40%;
+        margin: 10px;
+    }
+    main .my-service .cards .card:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+    /* my skills ssection */
+    main .skills .skill-text h2 {
+        font-size: 40px;
+    }
+    main .skills .skill-text p {
+        font-size: 20px;
+    }
+    main .skills .skill-text {
+        width: 50%;
+    }
+    main .skills .skills-area {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .skills .skills-area .skill {
+        width: 50%;
+    }
+    .skills {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-icons {
+        width: 70%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-icons i {
+        font-size: 60px;
+        padding: 10px;
+        color: orange;
+    }
+    .skills-icons i:hover {
+        font-size: 80px;
+    }
+    main .skills .skill-text {
+        width: 80%;
+        height: 300px;
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* contact section */
+    main .contact {
+        background: rgb(243, 230, 205);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    main .contact .contact-icons {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+    main .contact .contact-icons table {
+        max-width: 30%;
+        height: 200px;
+        margin-left: 10px;
+    }
+    main .contact form {
+        max-width: 50%;
+        text-align: left;
+        margin-top: 300px;
+        margin-left: 20px;
+    }
+    main .contact form label {
+        border: none;
+        outline: none;
+    }
+    /* footer */
+    main footer .footer-icons i {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+
+/* groß screen */
+
+@media (min-width: 1441px) {
+    header nav ul li a {
+        font-size: 25px;
+    }
+    header nav ul li a:hover {
+        font-size: 25px;
+    }
+    main .aboutme-section .personal-img .aboutme {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    main .aboutme-section .personal-img .iam {
+        font-size: 30px;
+    }
+    main .aboutme-section .abouttext p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    main .aboutme-section .personal-img img {
+        border-top-left-radius: 32px;
+        -webkit-border-top-left-radius: 32px;
+        -moz-border-top-left-radius: 32px;
+        border-top-right-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -moz-border-top-right-radius: 0;
+        border-bottom-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        -moz-border-bottom-right-radius: 30px;
+    }
+    main .aboutme-section .abouttext .dw-cv button {
+        font-size: 25px;
+    }
+    main .my-service .card p {
+        font-size: 30px;
+    }
+    .cards .card a button {
+        width: 150px;
+        padding: 15px;
+        font-size: 20px;
+        display: block;
+        border: none;
+        color: whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #DD403D;
+    }
+    main .my-service .card p {
+        font-size: 30px;
+    }
+    .cards .card a {
+        text-decoration: none;
+    }
+    main .skills .skill-text p {
+        font-size: 25px;
+    }
+    main .contact form label {
+        width: 100%;
+        font-size: 30px;
+    }
+     ::placeholder {
+        font-size: 25px;
+    }
+    main .contact .contact-icons table td {
+        font-size: 30px;
+        padding: 5px;
+    }
+    main .contact .contact-icons table i {
+        font-size: 60px;
+    }
+    footer span a {
+        font-size: 30px;
+    }
+}
